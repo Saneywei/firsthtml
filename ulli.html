@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ulli功能地圖選單</title>
     <style>
-        *,*::after,*::before {
+        *,
+        *::after,
+        *::before {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
@@ -14,37 +17,51 @@
 
         html,
         body {
-            scroll-behavior: smooth; 
+            scroll-behavior: smooth;
         }
     </style>
 </head>
+
 <body>
-    <ul style="list-style-type: none; position: fixed; top: 0; left: 0; width: 100%; height: 50px; background: #fff; display: flex; align-items: center; justify-content: center;">
-        <li style="display:inline;">內容解釋</li>
-        <li style="display:inline;">產品介紹</li>
-        <li style="display:inline;">最新資訊</li>
+    <ul
+        style="list-style-type: none; position: fixed; top: 0; left: 0; width: 100%; height: 50px; background: #fff; display: flex; align-items: center; justify-content: center;">
+        <li style="display:inline;">
+            <a href="#context-explain">內容解釋 |</a>
+        </li>
+        <li style="display:inline;">
+            <a href="#production"> 產品介紹 |</a>
+        </li>
+        <li style="display:inline;">
+            <a href="#news"> 最新資訊</a>
+        </li>
     </ul>
+    <div style="height: 60px"></div>
+    <div id="context-explain" style="height: 100vh; background:rgb(223, 215, 215);">
+        <h4>內容解釋</h4>
+        <H5>
+            在ul中的<br />
+            style="list-style-type: none; <br />
+            position: fixed; top: 0; left: 0; width: 100%; height: 50px; <br />
+            background: #fff; <br />
+            display: flex; <br />
+            align-items: center; <br />
+            justify-content: center;"<br />
+            可以讓ul選單釘選在最上方，並隨著頁面滾動走。<br /><br />
+            在li中的style="display:inline;"，能夠讓li的陣列為橫列(in同一條line)<br /><br />
+            在li中的a href "#___" 可以使超連結連接描點 id="___"<br /><br />
+            在style中的scroll-behavior: smooth; 可以使頁面滾動時變得滑順<br /><br />
 
-    <div>
-        <br/><br/><br/>
-        <span>內容解釋：<br/>
-        在ul中的
-        style="list-style-type: none; 
-        position: fixed; top: 0; left: 0; width: 100%; height: 50px; 
-        background: #fff; 
-        display: flex; 
-        align-items: center; 
-        justify-content: center;"<br/>
-        可以讓ul選單釘選在最上方，並隨著頁面滾動走。<br/><br/>
-        li中的style="display:inline;"，能夠讓li的陣列為橫列(in同一條line)<br/><br/>
-        scroll-behavior: smooth; 可以使頁面滾動時變得滑順<br/><br/>
-        
-        </span> 
-        <span></span>
-        
+        </H5>
+        </span>
 
-    
-    
     </div>
+    <div id="production" style="height: 100vh; background:rgb(255, 255, 255);">
+        <H4>產品介紹</H4>
+    </div>
+    <div id="news" style="height: 100vh; background:rgb(219, 211, 218);">
+        <H4>最新資訊</H4>
+    </div>
+
 </body>
+
 </html>
