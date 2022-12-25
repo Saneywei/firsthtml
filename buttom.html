@@ -15,4 +15,13 @@
     程式的部分：本來就不是給人類看的，所以放在"body"外
   
 </body>
+<button id="do-btn">Click Me</button>
+
+<script>
+    let btn = document.querySelector('#do-btn')
+
+    btn.addEventListener('click', (e) => {
+        alert('You click me!')
+    })
+</script>
 </html>
