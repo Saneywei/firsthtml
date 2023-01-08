@@ -1,0 +1,44 @@
+.container {
+    margin:0 auto;
+    padding: 10px;
+    background:rgb(211, 156, 156);
+}
+
+.box {
+    width: 80%;
+    height: 200px;
+    line-height: 20px;
+    background: #f5f3f1;
+    text-align:justify;
+    margin: 15px;
+    border: 3px solid rgb(148, 109, 109) ;border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 500;
+}
+
+.spanbox {
+    padding:11px 15px;
+    margin: 5px 15px;
+    border: 3px solid rgb(148, 109, 109) ;border-radius: 10px;
+    background: #e6ddd5;
+    text-align:justify;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 500;
+    display: inline-block
+}
+
+#p1 {
+    background-color:antiquewhite;
+    background-image: url(../images/dogg.jpg);
+    background-size:cover;
+}
+
+#p2 {
+    background-color:rgb(82, 76, 69);
+    background-image: url(../images/catt.jpg);
+    background-size:cover;
+    color: #FFFFFF
+}
