@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    width:100%;
+    margin-top:50px;
+}
+
+.face {
+    position:relative;
+    margin:auto;
+    height:400px;
+    width:400px;
+    background: rgb(236, 202, 88);
+    border-radius: 80px;
+}
+
+.lefteye {
+    position:absolute;
+    height: 120px;
+    width: 120px;
+    background: #FFF;
+    border-radius:50px;
+    top: 50px;
+    left: 40px;  
+}
+
+.righteye {
+    position:absolute;
+    height: 120px;
+    width: 120px;
+    background: #FFF;
+    border-radius:50px;
+    top: 50px;
+    right: 40px;  
+}
+
+.point {
+    position:absolute;
+    height: 80px;
+    width: 80px;
+    background: #000;
+    border-radius:28px;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+
+}
+
+.light1 {
+    position:absolute;
+    height: 30px;
+    width: 30px;
+    background: rgb(255, 255, 255);
+    border-radius:11px;
+    top: 10px;
+    left: 10px;
+}
+
+.light2 {
+    position:absolute;
+    height: 20px;
+    width: 20px;
+    background: rgb(255, 255, 255);
+    border-radius:7px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.mouth {
+    position: absolute;
+    height: 80px;
+    width: 180px;
+    background: #FFF;
+    border-radius: 50px 50px 100px 100px;
+    bottom:50px;
+    left: calc(50% - 90px);
+    overflow: hidden;
+}
+
+.tongue {
+    position: absolute;
+    height: 80px;
+    width: 100px;
+    background:rgb(236, 88, 88);
+    border-radius: 30px 30px 100px 100px;
+    left: calc(50% - 50px);
+    top: 28%;
+}
+
+.tongueline {
+    position: absolute;
+    height: 100px;
+    width: 6px;
+    background:rgb(204, 73, 73);
+    border-radius: 25px;
+    left: calc(50% - 3px);
+    top: 20%;
+}

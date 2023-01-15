@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.fn {
+    text-align: center;
+    margin-top: 20px;
+    /*這邊的text-align: center 可以讓按鈕置中*/
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 0;
+    background: #154fa7;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    /*cursor: pointer 是讓滑鼠摸過去會變手手的屬性*/
+}
+
+.button:hover {
+    background: #0b3575;
+    /*btuuon:hover是讓按鈕摸上去變色的直接指令*/
+}
+
+.ad-component {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.mask {
+    position: absolute;
+    /*他看了上一層ad-component的定位*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.411);
+}
+
+
+.wrap {
+    position: relative;
+    z-index: 2;
+    top: calc(50% - 175px);
+    /* left: 50%; */
+    /* margin-left:-300px; 舊版本使用方法，calc為新版本方法*/
+    left: calc(50% - 300px);
+    width: 600px;
+    height: 350px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.slogan {
+    position:relative;
+    top: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content {
+    padding: 10px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 800;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: #cecece;
+    border-radius:60px;
+    right: -25px;
+    top: -25px;
+/*contenter的padding會把行高吃掉導致沒辦法置中*/
+}
