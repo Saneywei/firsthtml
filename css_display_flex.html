@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display_flex</title>
+</head>
+<link rel="stylesheet" href="css/css_display_flex.css">
+<body>
+    <h1 class="title">宣告 FLEX DISPLAY</h1>
+    <div class="flex">
+        <div class="flex-item">第1行</div>
+        <div class="flex-item">第2行</div>
+        <div class="flex-item">
+            <div>第3行</div>
+            <div>第3.2行</div>
+        </div>
+    </div>
+
+    <h1 class="title">內容方向 FLEX DIRECTION</h1>
+    <div class="flex direction">
+        <div class="flex-item">第1行</div>
+        <div class="flex-item">第2行</div>
+        <div class="flex-item">
+            <div>第3行</div>
+            <div>第3.2行</div>
+        </div>
+    </div>
+
+    <h1 class="title">內容超出 FLEX WRAP</h1>
+    <div class="flex wrap">
+        <div class="flex-item">第1行</div>
+        <div class="flex-item">第2行</div>
+        <div class="flex-item" style="width:200px">
+            <div>第3行</div>
+            <div>第3.2行</div>
+        </div>
+    </div>
+
+    <h1 class="title">主軸對齊 justify-content</h1>
+    <div class="flex justify-content">
+        <div class="flex-item">第1行</div>
+        <div class="flex-item">第2行</div>
+        <div class="flex-item" style="width:200px">
+            <div>第3行</div>
+            <div>第3.2行</div>
+        </div>
+    </div>
+
+    <h1 class="title">副軸對齊 align-content</h1>
+    <div class="flex align-content" style="height:300px">
+        <div class="flex-item">第1行</div>
+        <div class="flex-item">第2行</div>
+        <div class="flex-item" style="width:200px">
+            <div>第3行</div>
+            <div>第3.2行</div>
+        </div>
+    </div>
+
+    <h1 class="title">副軸文字對齊 align-items</h1>
+    <div class="flex align-items" style="height:300px">
+        <div class="flex-item jic">第1行</div>
+        <div class="flex-item jic">第2行</div>
+        <div class="flex-item jic">
+            <div>第3.1行</div>
+            <div>第3.2行</div>
+        </div>
+    </div>
+
+</body>
+</html>
