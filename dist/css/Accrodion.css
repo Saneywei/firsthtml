@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.Accrodion {
+  margin: 20px auto;
+}
+.Accrodion .tab {
+  border: 1px solid #e6984f;
+}
+.Accrodion .tab > label {
+  display: flex;
+  padding: 10px;
+  color: #fff;
+  background-color: #e6984f;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.Accrodion .tab > label:hover {
+  background-color: #f3aa66;
+}
+.Accrodion .tab-content {
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+}/*# sourceMappingURL=Accrodion.css.map */
