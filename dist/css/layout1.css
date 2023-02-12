@@ -56,4 +56,16 @@ body {
   font-size: 16px;
   font-family: monospace;
   text-transform: uppercase;
+}
+
+.join-form {
+  color: #FFF;
+  background-image: url(../images/banner.jpeg);
+  background-size: cover;
+}
+.join-form .join-form-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
 }/*# sourceMappingURL=layout1.css.map */
