@@ -11,6 +11,12 @@
 
     .tab {
         border: 1px solid #e6984f;
+
+        .tab-content{
+            padding:10px;
+            font-family:'Courier New', Courier, monospace;
+            display:none;
+        }
     
         > label {
         display: flex;
@@ -22,16 +28,38 @@
         font-family:'Courier New', Courier, monospace;
         cursor: pointer;
         user-select: none;
+        justify-content: space-between;
+
+            .close-icon {
+                display:none;
+            }
 
             &:hover {
             background-color: #f3aa66;
             }
+
+        }
+
+        > input  {
+            display:none;
+        }
+
+        > input:checked {
+
+            ~ label {
+                .open-icon {
+                    display:none;
+                }
+
+                .close-icon {
+                    display:block;
+                }
+            }
+
+            ~ .tab-content {
+                display:block;
+            }
         }
     }
-
-    .tab-content{
-        padding:10px;
-        font-family:'Courier New', Courier, monospace;
-    }
-                    
 }
+

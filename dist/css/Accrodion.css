@@ -18,6 +18,11 @@
 .Accrodion .tab {
   border: 1px solid #e6984f;
 }
+.Accrodion .tab .tab-content {
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  display: none;
+}
 .Accrodion .tab > label {
   display: flex;
   padding: 10px;
@@ -30,11 +35,23 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  justify-content: space-between;
+}
+.Accrodion .tab > label .close-icon {
+  display: none;
 }
 .Accrodion .tab > label:hover {
   background-color: #f3aa66;
 }
-.Accrodion .tab-content {
-  padding: 10px;
-  font-family: "Courier New", Courier, monospace;
+.Accrodion .tab > input {
+  display: none;
+}
+.Accrodion .tab > input:checked ~ label .open-icon {
+  display: none;
+}
+.Accrodion .tab > input:checked ~ label .close-icon {
+  display: block;
+}
+.Accrodion .tab > input:checked ~ .tab-content {
+  display: block;
 }/*# sourceMappingURL=Accrodion.css.map */
