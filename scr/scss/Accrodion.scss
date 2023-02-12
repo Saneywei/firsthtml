@@ -10,7 +10,12 @@
     margin: 20px auto;
 
     .tab {
-        border: 1px solid #e6984f;
+        border: 1px solid #d38841;
+        border-bottom-width:0px;
+
+        &:last-child {
+            border-bottom-width:1px;
+        }
 
         .tab-content{
             padding:10px;

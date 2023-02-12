@@ -16,7 +16,11 @@
   margin: 20px auto;
 }
 .Accrodion .tab {
-  border: 1px solid #e6984f;
+  border: 1px solid #d38841;
+  border-bottom-width: 0px;
+}
+.Accrodion .tab:last-child {
+  border-bottom-width: 1px;
 }
 .Accrodion .tab .tab-content {
   padding: 10px;
