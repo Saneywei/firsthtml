@@ -1,0 +1,52 @@
+@import 'reset';
+
+body {
+    background: #6e6969;
+}
+
+
+
+.header {
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+
+    .header-content {
+        background: #FFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+
+    }
+
+    .menu {
+       list-style-type: none;
+       display: flex;
+    }
+
+    li {
+        text-align: center;
+        margin-left: 60px;
+        font-size:20px;
+
+        &:first-child {
+            margin-left: 0px;
+        }
+
+        &:hover {
+            color:rgb(156, 51, 170);
+        }
+        
+        .en {
+            font-size:16px;
+            font-family: monospace;
+            text-transform: uppercase;
+        }
+    }    
+}
+

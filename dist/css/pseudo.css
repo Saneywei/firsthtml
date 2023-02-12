@@ -12,6 +12,11 @@
   margin: auto;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .demo {
   background: rgb(255, 255, 255);
   color: rgb(37, 118, 172);
