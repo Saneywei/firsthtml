@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/Accrodion.css">
 </head>
 <body>
+
+    <h2>不會收合</h2>
     <div class="container">
         <div class="Accrodion">
             <div class="tab">
-                <input type="checkbox" id="tab-1">
+                <input type="checkbox" id="tab-1" class="tab-switch">
                 <label for="tab-1">
                     <div>One</div>
                     <div class="open-icon">+</div>
@@ -21,12 +23,39 @@
                 </div>
             </div>
             <div class="tab">
-                <input type="checkbox" id="tab-2">
+                <input type="checkbox" id="tab-2" class="tab-switch">
                 <label for="tab-2">
                     <div>Two</div>
                     <div class="open-icon">+</div>
                     <div class="close-icon">-</div></label>
                 <div class="tab-content">Hello 2</div>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+
+    <h2>自動收合</h2>
+
+    <div class="container">
+        <div class="Accrodion">
+            <div class="tab">
+                <input type="radio" id="tab-3" name="s" class="tab-switch">
+
+                <label for="tab-3">
+                    <div>One</div>
+                    <div class="open-icon">+</div>
+                    <div class="close-icon">-</div>
+                </label>
+                <div class="tab-content">Hello 1</div>
+            </div>
+            <div class="tab">
+                <input type="radio" id="tab-4" name="s" class="tab-switch">
+                <label for="tab-4">
+                    <div>Two</div>
+                    <div class="open-icon">+</div>
+                    <div class="close-icon">-</div>
+                </label>
+                <div class="tab-content">Hello 2</div>        
             </div>
         </div>
     </div>

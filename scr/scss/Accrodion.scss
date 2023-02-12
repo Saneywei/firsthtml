@@ -45,11 +45,11 @@
 
         }
 
-        > input  {
+        > .tab-switch  {
             display:none;
         }
 
-        > input:checked {
+        > .tab-switch:checked {
 
             ~ label {
                 .open-icon {
@@ -65,6 +65,13 @@
                 display:block;
             }
         }
+
+        
     }
 }
 
+h2 {
+    display: flex;
+    justify-content: center;
+    margin:20px;
+}

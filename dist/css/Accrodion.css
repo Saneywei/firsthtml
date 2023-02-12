@@ -47,15 +47,21 @@
 .Accrodion .tab > label:hover {
   background-color: #f3aa66;
 }
-.Accrodion .tab > input {
+.Accrodion .tab > .tab-switch {
   display: none;
 }
-.Accrodion .tab > input:checked ~ label .open-icon {
+.Accrodion .tab > .tab-switch:checked ~ label .open-icon {
   display: none;
 }
-.Accrodion .tab > input:checked ~ label .close-icon {
+.Accrodion .tab > .tab-switch:checked ~ label .close-icon {
   display: block;
 }
-.Accrodion .tab > input:checked ~ .tab-content {
+.Accrodion .tab > .tab-switch:checked ~ .tab-content {
   display: block;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
 }/*# sourceMappingURL=Accrodion.css.map */
