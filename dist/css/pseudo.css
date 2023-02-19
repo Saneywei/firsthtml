@@ -23,6 +23,7 @@ a {
   justify-content: center;
   position: relative;
   margin-bottom: 20px;
+  color: #FFF;
 }
 .slogan::after {
   content: "";
@@ -38,7 +39,39 @@ a {
 .form-control-item {
   display: flex;
   justify-content: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+.form-control-item.form-control-mixed {
+  position: relative;
+}
+.form-control-item.form-control-mixed.after .form-control {
+  padding-right: 60px;
+}
+.form-control-item.form-control-mixed.after .form-control-append {
+  right: -1px;
+}
+.form-control-item.form-control-mixed.after .form-control-append .button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-control-item.form-control-mixed.before .form-control {
+  padding-left: 60px;
+}
+.form-control-item.form-control-mixed.before .form-control-append {
+  left: -1px;
+}
+.form-control-item.form-control-mixed.before .form-control-append .button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-control-item .form-control-append {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+.form-control-item .form-control-append button {
+  height: 100%;
+  display: inline-block;
 }
 .form-control-item > .form-control {
   height: 40px;
@@ -48,7 +81,6 @@ a {
   border-radius: 5px;
   border: solid 0px;
   outline: 0;
-  margin: 5px;
 }
 
 .button {
@@ -58,7 +90,6 @@ a {
   border-radius: 5px;
   border: solid 0px;
   outline: 0;
-  margin: 5px;
 }
 .button.primary {
   color: #FFF;
@@ -66,6 +97,19 @@ a {
 }
 .button.primary:hover {
   background-color: #ac2bd3;
+}
+.button.check {
+  color: #FFF;
+  background-color: #e93636;
+}
+.button.check:hover {
+  background-color: #c51e1e;
+}
+
+.footer {
+  background: #fff;
+  padding: 50px 0;
+  text-align: right;
 }
 
 .demo {
