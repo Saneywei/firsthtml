@@ -60,9 +60,49 @@ body {
     .join-form-content {
         display: flex;
         align-items: center;
-        justify-content:space-between;
+        //justify-content:space-between;
         min-height:100vh;
+
+        .content-wrap {
+            background:rgba(37, 70, 107, 0.9);
+            display:flex;
+            width: 100%;
+            
+            >div {
+
+                // flex: 1;
+                width: 50%;
+                padding: 20px 25px;
+                position: relative;
+    
+                &:first-child::before {
+                    content: '';
+                    border-right: 3px dashed #fff;
+                    position: absolute;
+                    right: 0px;
+                    top: 20px;
+                    height: calc(100% - 40px);
+                }
+            }
+        }
     }
 
+    .join-form-text {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: justify;
+        
+    }
+
+    .form-control-button{
+        display:flex;
+        justify-content: end;
+    }
 
 }
+
+
+    
+
+    
+    

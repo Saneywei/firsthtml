@@ -17,6 +17,57 @@ a {
   text-decoration: none;
 }
 
+.slogan {
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+.slogan::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 140px);
+  bottom: -10px;
+  width: 0;
+  height: 3px;
+  border-left: solid 100px #4395f3;
+  border-right: solid 180px #FFF;
+}
+
+.form-control-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.form-control-item > .form-control {
+  height: 40px;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: solid 0px;
+  outline: 0;
+  margin: 5px;
+}
+
+.button {
+  height: 40px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 0px;
+  outline: 0;
+  margin: 5px;
+}
+.button.primary {
+  color: #FFF;
+  background-color: #ca43f3;
+}
+.button.primary:hover {
+  background-color: #ac2bd3;
+}
+
 body {
   background: #6e6969;
 }
@@ -66,6 +117,32 @@ body {
 .join-form .join-form-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   min-height: 100vh;
+}
+.join-form .join-form-content .content-wrap {
+  background: rgba(37, 70, 107, 0.9);
+  display: flex;
+  width: 100%;
+}
+.join-form .join-form-content .content-wrap > div {
+  width: 50%;
+  padding: 20px 25px;
+  position: relative;
+}
+.join-form .join-form-content .content-wrap > div:first-child::before {
+  content: "";
+  border-right: 3px dashed #fff;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  height: calc(100% - 40px);
+}
+.join-form .join-form-text {
+  font-size: 16px;
+  line-height: 30px;
+  text-align: justify;
+}
+.join-form .form-control-button {
+  display: flex;
+  justify-content: end;
 }/*# sourceMappingURL=layout1.css.map */
