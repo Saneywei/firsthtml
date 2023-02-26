@@ -117,65 +117,105 @@ a {
   text-align: right;
 }
 
-.product-block {
-  margin-top: 20px;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.product {
-  width: 300px;
-  min-height: 200px;
-  background: #ffffff;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px 2px rgba(97, 93, 93, 0.8);
-  margin: 0 15px;
-  margin-bottom: 30px;
-  display: inline-block;
-}
-.product .product-image {
-  width: 100%;
-  height: 200px;
-  border-radius: 10px;
-  background: #ff5858;
-  color: #fff;
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+body {
+  background-color: #4ea1ee;
   overflow: hidden;
 }
-.product .product-image:hover .product-image-wrap {
-  transform: scale(1.5);
+
+.cloud {
+  background-color: #FFF;
+  border-radius: 200px;
+  height: 150px;
+  width: 450px;
+  margin: 80px 50px;
+  position: relative;
 }
-.product .product-image .product-image-wrap {
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/dog.jpeg);
-  background-position: center;
-  background-size: cover;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
-}
-.product .product-image .discount-bar {
-  width: 200px;
-  height: 30px;
-  background-color: #ff5858;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.cloud::after {
+  content: "";
+  background-color: #FFF;
+  border-radius: 200px;
+  height: 125px;
+  width: 125px;
   position: absolute;
-  top: 18px;
-  right: -62px;
-  rotate: 45deg;
+  left: 80px;
+  top: -60px;
 }
-.product .product-title {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}/*# sourceMappingURL=product_discount.css.map */
+.cloud::before {
+  content: "";
+  background-color: #FFF;
+  border-radius: 200px;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 80px;
+  top: -100px;
+}
+.cloud.c1 {
+  transform: translate(40px, 6vh);
+  animation-name: move-1;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.cloud.c2 {
+  transform: translate(80px, 6vh) scale(0.6);
+  animation-name: move-2;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.cloud.c3 {
+  transform: translate(40px, 6vh) scale(0.7);
+  animation-name: move-3;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.cloud.c4 {
+  transform: translate(180px, 2vh) scale(0.4);
+  animation-name: move-4;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes move-1 {
+  0% {
+    transform: translate(0%, 6vh);
+  }
+  50% {
+    transform: translate(50%, 4vh);
+  }
+  100% {
+    transform: translate(100%, 6vh);
+  }
+}
+@keyframes move-2 {
+  0% {
+    transform: translate(0%, 6vh) scale(0.6);
+  }
+  100% {
+    transform: translate(100%, 6vh) scale(0.6);
+  }
+}
+@keyframes move-3 {
+  0% {
+    transform: translate(0%, 6vh) scale(0.7);
+  }
+  100% {
+    transform: translate(100%, 6vh) scale(0.7);
+  }
+}
+@keyframes move-4 {
+  0% {
+    transform: translate(0%, 2vh) scale(0.4);
+  }
+  100% {
+    transform: translate(100%, 2vh) scale(0.4);
+  }
+}/*# sourceMappingURL=sky.css.map */

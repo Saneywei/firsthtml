@@ -30,6 +30,8 @@
         justify-content: center;
         position:relative;
         overflow: hidden;
+        
+
 
         &:hover {
             .product-image-wrap{
@@ -43,6 +45,9 @@
             background-image: url(../images/dog.jpeg);
             background-position: center;
             background-size: cover;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
         }
 
         .discount-bar {

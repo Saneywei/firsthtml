@@ -149,21 +149,38 @@ a {
   cursor: pointer;
   transition-property: background hover;
   transition-duration: 2s;
-  transition-delay: 1s;
+  transition-delay: 0.2s;
 }
 .block:hover {
   background: #c5bc3a;
   font-size: 30px;
 }
 
-.block-2 {
-  width: 200px;
-  height: 200px;
-  background: #8ad12c;
-  color: #fff;
+.func-block {
+  display: inline;
+}
+.func-block > label {
+  margin: 20px;
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background: #e9e9e9;
+  color: #FFF;
   cursor: pointer;
+}
+.func-block .run {
+  background: #4168d3;
+}
+.func-block .back {
+  background: #c94747;
+}
+
+#switch-status:checked ~ .func-block > label.run {
   display: none;
+}
+#switch-status:checked ~ .func-block > label.back {
+  display: inline;
 }/*# sourceMappingURL=transform.css.map */
