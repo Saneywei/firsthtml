@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout 1</title>
     <link rel="stylesheet" href="css/layout1.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <div class="header">
@@ -44,7 +45,7 @@
 
     <div class="join-form">
         <div class="container">
-            <div class="join-form-content">
+            <div class="join-form-content animate__animated animate__jello">
                 <div class="content-wrap">
                     <div class="left-side">
                         <h3 class="slogan">加入赫綵，人生精彩</h3>
@@ -79,42 +80,42 @@
         <div class="process-wrap">
             <h3 class="slogan">課程顧問</h3>
             <div class="flow">
-                <div class="flow-item">
+                <div class="flow-item wow animate__animated animate__shakeX">
                     <div class="flow-circle"></div>
                     <div class="flow-text">
                         <h4>需求訪談</h4>
                         <div>深度了解需求，給予最適合的建議</div>
                     </div>
                 </div>
-                <div class="flow-item">
+                <div class="flow-item wow animate__animated animate__shakeY">
                     <div class="flow-circle"></div>
                     <div class="flow-text">
                         <h4>課程搭配</h4>
                         <div>提供專業課程配套方案</div>
                     </div>
                 </div>
-                <div class="flow-item">
+                <div class="flow-item wow animate__animated animate__shakeX">
                     <div class="flow-circle"></div>
                     <div class="flow-text">
                         <h4>免費試聽</h4>
                         <div>實際體驗課程狀況</div>
                     </div>
                 </div>
-                <div class="flow-item">
+                <div class="flow-item wow animate__animated animate__shakeY">
                     <div class="flow-circle"></div>
                     <div class="flow-text">
                         <h4>分期付費</h4>
                         <div>提供無壓力的付款方式</div>
                     </div>
                 </div>
-                <div class="flow-item">
+                <div class="flow-item wow animate__animated animate__shakeX">
                     <div class="flow-circle"></div>
                     <div class="flow-text">
                         <h4>課後關懷</h4>
                         <div>關心上課情形，給予適度調整</div>
                     </div>
                 </div>
-                <div class="flow-item">
+                <div class="flow-item wow animate__animated animate__shakeY">
                     <div class="flow-circle"></div>
                     <div class="flow-text">
                         <h4>就業輔導</h4>
@@ -132,6 +133,11 @@
         </div>
     </div>
 </body>
+
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 </html>
 
 
