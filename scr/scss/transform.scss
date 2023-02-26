@@ -15,6 +15,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    margin:100px;
 
     .rotate-text {
         font-size: 40px;
@@ -25,6 +26,36 @@
 
 }
 
+.block {
+    width: 200px;
+    height: 200px;
+    background: #ac5a5a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-property: background hover;
+    transition-duration: 2s;
+    transition-delay: 1s;
 
+    &:hover {
+        background: #c5bc3a;
+        font-size: 30px;
+        
+        
+    }
+}
 
+.block-2 {
+    width: 200px;
+    height: 200px;
+    background: #8ad12c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 
+    display:none;
+    }

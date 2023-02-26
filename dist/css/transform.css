@@ -130,9 +130,40 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 100px;
 }
 .rotate .rotate-text {
   font-size: 40px;
   font-weight: 800;
   transform: rotate(135deg);
+}
+
+.block {
+  width: 200px;
+  height: 200px;
+  background: #ac5a5a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition-property: background hover;
+  transition-duration: 2s;
+  transition-delay: 1s;
+}
+.block:hover {
+  background: #c5bc3a;
+  font-size: 30px;
+}
+
+.block-2 {
+  width: 200px;
+  height: 200px;
+  background: #8ad12c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
 }/*# sourceMappingURL=transform.css.map */
