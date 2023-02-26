@@ -140,9 +140,6 @@ a {
   height: 200px;
   border-radius: 10px;
   background: #ff5858;
-  background-image: url(../images/dog.jpeg);
-  background-position: center;
-  background-size: cover;
   color: #fff;
   margin-bottom: 15px;
   display: flex;
@@ -151,7 +148,17 @@ a {
   position: relative;
   overflow: hidden;
 }
-.product .discount-bar {
+.product .product-image:hover .product-image-wrap {
+  transform: scale(1.5);
+}
+.product .product-image .product-image-wrap {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/dog.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.product .product-image .discount-bar {
   width: 200px;
   height: 30px;
   background-color: #ff5858;
