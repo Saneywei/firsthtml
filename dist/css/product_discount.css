@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.slogan {
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+  color: #FFF;
+}
+.slogan::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 140px);
+  bottom: -10px;
+  width: 0;
+  height: 3px;
+  border-left: solid 100px #4395f3;
+  border-right: solid 180px #FFF;
+}
+
+.form-control-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.form-control-item.form-control-mixed {
+  position: relative;
+}
+.form-control-item.form-control-mixed.after .form-control {
+  padding-right: 60px;
+}
+.form-control-item.form-control-mixed.after .form-control-append {
+  right: -1px;
+}
+.form-control-item.form-control-mixed.after .form-control-append .button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-control-item.form-control-mixed.before .form-control {
+  padding-left: 60px;
+}
+.form-control-item.form-control-mixed.before .form-control-append {
+  left: -1px;
+}
+.form-control-item.form-control-mixed.before .form-control-append .button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-control-item .form-control-append {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+.form-control-item .form-control-append button {
+  height: 100%;
+  display: inline-block;
+}
+.form-control-item > .form-control {
+  height: 40px;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: solid 0px;
+  outline: 0;
+}
+
+.button {
+  height: 40px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 0px;
+  outline: 0;
+}
+.button.primary {
+  color: #FFF;
+  background-color: #ca43f3;
+}
+.button.primary:hover {
+  background-color: #ac2bd3;
+}
+.button.check {
+  color: #FFF;
+  background-color: #e93636;
+}
+.button.check:hover {
+  background-color: #c51e1e;
+}
+
+.footer {
+  background: #fff;
+  padding: 50px 0;
+  text-align: right;
+}
+
+.product-block {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 300px;
+  min-height: 200px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 2px rgba(97, 93, 93, 0.8);
+  margin: 0 15px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.product .product-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  background: #ff5858;
+  background-image: url(../images/dog.jpeg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.product .discount-bar {
+  width: 200px;
+  height: 30px;
+  background-color: #ff5858;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 18px;
+  right: -62px;
+  rotate: 45deg;
+}
+.product .product-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=product_discount.css.map */
