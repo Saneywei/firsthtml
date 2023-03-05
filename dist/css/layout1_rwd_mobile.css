@@ -1,0 +1,49 @@
+.mobile-icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.mobile-icon > span {
+  display: inline-block;
+  width: 30px;
+  height: 5px;
+  background: #000;
+  margin-bottom: 5px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+.mobile-icon > span:last-child {
+  margin-bottom: 0;
+}
+.mobile-icon:hover > span {
+  background: rgb(177, 11, 11);
+}
+
+.mobile-icon-X {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.mobile-icon-X > span {
+  display: inline-block;
+  width: 30px;
+  height: 5px;
+  background: #000;
+  margin-bottom: 5px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+.mobile-icon-X .S1 {
+  transform: rotate(45deg);
+  background: RED;
+}
+.mobile-icon-X .S2 {
+  transform: rotate(135deg);
+  background: rgb(150, 42, 42);
+  position: absolute;
+}
+.mobile-icon-X:hover > span {
+  background: rgb(177, 11, 11);
+}/*# sourceMappingURL=layout1_rwd_mobile.css.map */

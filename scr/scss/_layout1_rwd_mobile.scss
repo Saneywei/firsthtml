@@ -1,0 +1,147 @@
+.mobile-icon {
+        position: relative;
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    
+        >span {
+            display: inline-block;
+            width: 30px;
+            height: 5px;
+            background: #000;
+            margin-bottom: 5px;
+            transition-property: background-color transform;
+            transition-duration: 0.5s;
+    
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    
+        &:hover {
+            >span {
+                background: rgb(177, 11, 11);
+            }
+        }
+    }
+
+    .mobile-switch {
+        display:none;
+    }
+    
+    .mobile-switch:checked {
+        
+        ~.mobile-icon {
+           
+            >span {
+                background:rgb(58, 56, 56);
+
+                &:first-child {
+                    transform: rotate(225deg);
+                    position:absolute;
+                }
+                &:last-child {
+                    transform:rotaTe(315deg);
+                }
+                &:nth-child(2) {
+                    display:none;
+                }
+            }
+        }
+    }
+
+
+// 切換三、X方法2
+// .mobile-icon {
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     cursor: pointer;
+
+//     >span {
+//         display: inline-block;
+//         width: 30px;
+//         height: 5px;
+//         background: #000;
+//         margin-bottom: 5px;
+//         transition-property: background-color;
+//         transition-duration: 0.5s;
+
+//         &:last-child {
+//             margin-bottom: 0;
+//         }
+//     }
+
+//     &:hover {
+//         >span {
+//             background: rgb(177, 11, 11);
+//         }
+//     }
+// }
+
+// .mobile-icon-X {
+//     cursor: pointer;
+//     display:none;
+
+//      >span {
+//         display: inline-block;
+//         width: 30px;
+//         height: 5px;
+//         background: #000;
+//         margin-bottom: 5px;
+//         transition-property: background-color;
+//         transition-duration: 0.5s;
+
+//      }
+
+//     .S1 {
+//         transform: rotate(45deg);
+//         background: RED;
+//     }
+//     .S2 {
+//         transform: rotate(135deg);
+//         background: rgb(255, 0, 0);
+//         position:absolute;
+//     }
+
+     
+//     &:hover {
+//         >span {
+//             background: rgb(177, 11, 11);
+//         }
+//     }
+// }
+
+// .mobile-switch {
+//     display:none;
+// }
+
+// .mobile-switch:checked {
+    
+//     ~label {
+//         &.mobile-icon {
+//         display:none;
+//         }
+//         &.mobile-icon-X {
+//             position: relative;
+//             display: flex;
+//             flex-direction: column;
+//             margin-top:6px;
+//         }
+//     }
+// }
+
+
+@media screen and (max-width: 600px) {
+    .mobile-icon {
+        display:flex;
+    }
+    
+    .header {
+        .menu {
+            display: none;
+        }
+    }
+
+}
+

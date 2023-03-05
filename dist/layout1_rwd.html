@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout 1</title>
-    <link rel="stylesheet" href="css/layout2.css">
+    <title>Layout 1 RWD</title>
+    <link rel="stylesheet" href="css/layout1_rwd.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <div class="header">
         <div class="container">
             <div class="header-content">
+                <input type="checkbox" id="tab-1" class="mobile-switch">
                 <div>
                     <a href="layout1.html">
                         <img src="images/logo.svg">
@@ -31,20 +33,30 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#courses-block">
                                 <div class="en">courses</div>
                                 <div>課程總覽</div>
                             </a>
                         </li>
                     </ul>
                 </div>
+                <label for="tab-1" class="mobile-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <!-- 切換三、X方法2 
+                <label for="tab-1" class="mobile-icon-X">
+                    <span class="S1"></span>
+                    <span class="S2"></span>
+                </label> -->
             </div>
         </div>    
     </div>
 
     <div class="join-form">
         <div class="container">
-            <div class="join-form-content">
+            <div class="join-form-content animate__animated animate__jello">
                 <div class="content-wrap">
                     <div class="left-side">
                         <h3 class="slogan">加入赫綵，人生精彩</h3>
@@ -75,46 +87,46 @@
         </div>    
     </div>
 
-    <div class="process-flow">
+    <div class="process-flow" id="courses-block">
         <div class="process-wrap">
             <h3 class="slogan">課程顧問</h3>
             <div class="flow">
-                <div class="flow-item red">
-                    <div class="flow-circle "></div>
-                    <div class="flow-text ">
+                <div class="flow-item wow animate__animated animate__shakeX">
+                    <div class="flow-circle"></div>
+                    <div class="flow-text">
                         <h4>需求訪談</h4>
                         <div>深度了解需求，給予最適合的建議</div>
                     </div>
                 </div>
-                <div class="flow-item yellow">
-                    <div class="flow-circle yellow"></div>
+                <div class="flow-item wow animate__animated animate__shakeY">
+                    <div class="flow-circle"></div>
                     <div class="flow-text">
                         <h4>課程搭配</h4>
                         <div>提供專業課程配套方案</div>
                     </div>
                 </div>
-                <div class="flow-item blue">
+                <div class="flow-item wow animate__animated animate__shakeX">
                     <div class="flow-circle"></div>
                     <div class="flow-text">
                         <h4>免費試聽</h4>
                         <div>實際體驗課程狀況</div>
                     </div>
                 </div>
-                <div class="flow-item red">
+                <div class="flow-item wow animate__animated animate__shakeY">
                     <div class="flow-circle"></div>
                     <div class="flow-text">
                         <h4>分期付費</h4>
                         <div>提供無壓力的付款方式</div>
                     </div>
                 </div>
-                <div class="flow-item yellow">
+                <div class="flow-item wow animate__animated animate__shakeX">
                     <div class="flow-circle"></div>
                     <div class="flow-text">
                         <h4>課後關懷</h4>
                         <div>關心上課情形，給予適度調整</div>
                     </div>
                 </div>
-                <div class="flow-item blue">
+                <div class="flow-item wow animate__animated animate__shakeY">
                     <div class="flow-circle"></div>
                     <div class="flow-text">
                         <h4>就業輔導</h4>
@@ -125,13 +137,17 @@
         </div>
     </div>
 
-
     <div class="footer">
         <div class="container">
             &copy; appedu 2023.
         </div>
     </div>
 </body>
+
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 </html>
 
 

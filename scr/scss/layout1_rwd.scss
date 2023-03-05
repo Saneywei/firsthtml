@@ -20,7 +20,6 @@ body {
         border-radius: 10px;
         border-top-right-radius: 0;
         border-top-left-radius: 0;
-
     }
 
     .menu {
@@ -170,12 +169,14 @@ body {
                 right:50%;
                 margin-left: unset;
                 margin-right: 50px;
+                background: #e7a76b;
+            }
+
+            .flow-circle {
+                background:#e7a76b;
             }
         }
         
-        .yellow {
-            background:#f3b267;
-        }
 
         .flow-circle {
             background: #c96e6e;
@@ -184,10 +185,6 @@ body {
             border-radius: 50px;
             position:relative;
             z-index:10;
-
-            .yellow {
-                background:#f3b267;
-            }
         }
 
         .flow-text {
@@ -204,12 +201,8 @@ body {
             }
         }
 
-
-
-
-
     }
 }
 
-
     
+@import 'layout1_rwd_mobile';
