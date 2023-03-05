@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD image test</title>
+    <link rel="stylesheet" href="css/RWD.css">
+</head>
+<body>
+    <div class="section">
+        <H3>花朵破版問題</H3>
+        <div class="image-block image-fluid-max">
+            <img src="images/flower_16.png" alt="">
+        </div>
+        <div class="image-block image-fluid">
+            <img src="images/flower_16.png" alt="">
+        </div>
+        <div class="image-block">
+            <img src="images/flower_16.png" alt="">
+        </div><div class="space"></div>
+        <div class="image-block image-fluid-max">
+            <img src="images/flower.png" alt="">
+        </div>
+        <div class="image-block image-fluid">
+            <img src="images/flower.png" alt="">
+        </div>
+        <div class="image-block">
+            <img src="images/flower.png" alt="">
+        </div>
+        <div class="space"></div>
+    </div>
+
+    <div class="section">
+        <H3>列印按鈕隱藏</H3>
+        <div class="fn">
+            <button class="btn print" id="print-btn">列印</button>
+        </div>
+        <div class="fn2">列印按鈕已被隱藏</div>
+    </div>
+
+    <div class="section">
+        <H3>RWD裝置寬度設定</H3>
+        <div class="block"> </div>
+
+    </div>
+
+    
+
+</body>
+<script>
+    let btn = document.querySelector('#print-btn');
+    if (btn) {
+        btn.addEventListener('click', () => {
+            window.print();
+        })
+    }
+</script>
+</html>
+
