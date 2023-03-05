@@ -51,6 +51,7 @@
     }
 
 
+
 // 切換三、X方法2
 // .mobile-icon {
 //     position: relative;
@@ -136,12 +137,38 @@
     .mobile-icon {
         display:flex;
     }
-    
     .header {
         .menu {
             display: none;
         }
     }
+    #tab-1 {
+        &:checked {
+            ~.menu {
+                display: block;
 
+                &.extend ul {
+                    position: absolute;
+                    top: 75px;
+                    background: #fff;
+                    width: 80%;
+                    left: 10%;
+                    border-radius: 10px;
+                    border-top-right-radius: 0;
+                    border-top-left-radius: 0;
+
+                    padding-top: 15px;
+                    flex-direction: column;
+
+                    li {
+                        margin-left: 0;
+                        margin-bottom: 15px;
+                    }
+                }           
+            }
+        }
+    }
+
+    
 }
 

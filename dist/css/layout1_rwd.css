@@ -138,7 +138,7 @@ body {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
-.header .menu {
+.header .menu ul {
   list-style-type: none;
   display: flex;
 }
@@ -335,5 +335,24 @@ body {
   }
   .header .menu {
     display: none;
+  }
+  #tab-1:checked ~ .menu {
+    display: block;
+  }
+  #tab-1:checked ~ .menu.extend ul {
+    position: absolute;
+    top: 75px;
+    background: #fff;
+    width: 80%;
+    left: 10%;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    padding-top: 15px;
+    flex-direction: column;
+  }
+  #tab-1:checked ~ .menu.extend ul li {
+    margin-left: 0;
+    margin-bottom: 15px;
   }
 }/*# sourceMappingURL=layout1_rwd.css.map */
