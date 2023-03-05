@@ -355,4 +355,22 @@ body {
     margin-left: 0;
     margin-bottom: 15px;
   }
+  .join-form .join-form-content .content-wrap {
+    flex-direction: column;
+  }
+  .join-form .join-form-content .content-wrap > div:first-child::before {
+    width: 85%;
+    border-right: 0px;
+    border-bottom: 3px dashed #fff;
+    right: unset;
+    top: unset;
+  }
+  .join-form .join-form-content .content-wrap .left-side {
+    width: 100%;
+    padding: 30px 25px;
+  }
+  .join-form .join-form-content .content-wrap .right-side {
+    width: 100%;
+    margin-top: -20px;
+  }
 }/*# sourceMappingURL=layout1_rwd.css.map */

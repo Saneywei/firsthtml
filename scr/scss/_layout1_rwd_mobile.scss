@@ -169,6 +169,29 @@
         }
     }
 
-    
+    .join-form .join-form-content .content-wrap {
+        flex-direction:column;
+
+        > div:first-child::before {
+            width:85%;
+            border-right: 0px;
+            border-bottom: 3px dashed #fff;
+            right:unset;
+            top:unset;
+        }
+
+        .left-side {
+            width:100%;
+            padding: 30px 25px;
+        }
+        .right-side {
+            width:100%;
+            margin-top:-20px;
+        }
+
+
+
+    }
+
 }
 
