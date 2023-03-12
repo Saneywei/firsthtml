@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+</body>
+
+<script>
+    // let age = 18;
+    // console.log(age);
+
+    // let firstname = 'Saney';
+    // let lastname = 'Wei';
+    // let fullname = `${firstname}_${lastname}`; //ES6用法//
+    // console.log(fullname);
+
+    // let n1 = 1;
+    // let s1 = '10';
+    // let ns = n1 + s1;
+    // let ns2 = parseInt(s1, 9) + n1; //praseInt能夠讓字串變成數字
+    // console.log(ns);
+    // console.log(ns2);
+
+
+
+    // let students = [10, 20, 30]; //陣列
+
+    // students.push(40); //陣列中新增一個項目
+
+    // console.log(students);  //顯示陣列
+
+    // console.log(students[2]);  //顯示陣列中第三項
+
+    // let scope = students.join(','); //陣列中增加","" 
+    // console.log(scope, typeof scope, typeof students); //顯示陣列中增加結果並顯示分類
+
+    // console.log(students.indexOf(200)); //尋找陣列中的第幾個，若沒有則回傳-1
+
+    // let index = students.indexOf(200);
+    // console.log(index);
+
+    // students.splice(index, 1);  //刪除陣列中一個項目
+    // console.log(students);
+
+    // students.push(50);
+    // students.push(60);
+    // students.push(70);
+    // students.push(80);
+
+    // students.forEach((scope, index) => {  //forEach個別列出
+    //     console.log(`index ${index}: ${scope}`);
+    // })
+
+    let students = [];
+
+    students.push({
+        name: 'David Lin',
+        score: 100
+    });
+
+    students.push({
+        name: 'John Chen',
+        score: 80
+    });
+
+    console.log(students);
+
+
+    students.forEach((student, index) => {
+        console.log(`index ${index}: ${student.name} score is ${student.score}`);
+    })
+
+
+</script>
+
+</html>
