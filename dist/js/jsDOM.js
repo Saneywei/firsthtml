@@ -35,7 +35,6 @@ const login = function() {
 
 /*更改uid的內容*/
 console.log(uid.innerHTML);
-
 uid.innerHTML = 'New UID';
 
 
