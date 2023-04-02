@@ -15,7 +15,7 @@
         <div class="container">
             <div class="input-group">
                 <label for="">Item</label>
-                <input type="text" ref="itemName" @keyup.enter="addItem">
+                <input type="text" v-model="itemValue" ref="itemName" @keyup.enter="addItem">
                 <button @click="addItem">ADD</button>
             </div>
             <hr>
@@ -25,6 +25,7 @@
                         :class="{delete: item.status == 'done'}">
                         <input type="checkbox" :checked="item.status == 'done'">
                         <div>{{ item.value }}</div>
+                        <button @click="removeItem(itemIndex)">刪除</button>
                     </li>
                 </ul>
             </div>
